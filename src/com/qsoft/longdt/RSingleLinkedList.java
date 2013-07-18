@@ -18,15 +18,16 @@ public class RSingleLinkedList {
 		}
 	}
 
-	public Object size() {
+	public int size() {
 		return singleLinkedList.size();
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public void insertAfter(int position, Object newObj) {
+		
+	}
 
+	public String get(int i) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
