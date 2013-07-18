@@ -11,6 +11,10 @@ public class RSingleLinkedList {
 		singleLinkedList = new LinkedList<>();
 	}
 
+	public RSingleLinkedList(String[] strArray) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Object size() {
 		return singleLinkedList.size();
 	}
