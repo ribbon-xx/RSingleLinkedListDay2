@@ -9,7 +9,7 @@ public class RSingleLinkedListTest extends TestCase {
 	private String[] strArray;
 
 	private String newStr;
-	
+
 	private String nodeToDel;
 
 	@Override
@@ -20,7 +20,7 @@ public class RSingleLinkedListTest extends TestCase {
 			strArray[i] = "String " + i;
 		}
 		newStr = "New Strings With Random Position Per Test";
-		
+
 		nodeToDel = "String 1";
 	}
 
@@ -43,12 +43,19 @@ public class RSingleLinkedListTest extends TestCase {
 		assertEquals(6, rSLL.size());
 		assertEquals(newStr, rSLL.get(3));
 	}
-	
+
 	@Test
-	public void testDeleteANodeInList(){
+	public void testDeleteANodeInList() {
 		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
 		rSLL.delete(nodeToDel);
 		assertEquals(4, rSLL.size());
+	}
+
+	@Test
+	public void testGetFirstObjectFromList() {
+		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
+		Object firstElement = rSLL.first();
+		assertEquals(nodeToDel, firstElement);
 	}
 
 }

@@ -43,4 +43,9 @@ public class RSingleLinkedList {
 		singleLinkedList.remove(nodeToDel);
 	}
 
+	public Object first() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
