@@ -9,6 +9,8 @@ public class RSingleLinkedListTest extends TestCase {
 	private String[] strArray;
 
 	private String newStr;
+	
+	private String nodeToDel;
 
 	@Override
 	protected void setUp() throws Exception {
@@ -18,6 +20,8 @@ public class RSingleLinkedListTest extends TestCase {
 			strArray[i] = "String " + i;
 		}
 		newStr = "New Strings With Random Position Per Test";
+		
+		nodeToDel = "String 1";
 	}
 
 	@Test
@@ -39,4 +43,5 @@ public class RSingleLinkedListTest extends TestCase {
 		assertEquals(6, rSLL.size());
 		assertEquals(newStr, rSLL.get(3));
 	}
+
 }
