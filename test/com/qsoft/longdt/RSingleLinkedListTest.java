@@ -12,6 +12,10 @@ public class RSingleLinkedListTest extends TestCase {
 
 	private String nodeToDel;
 
+	private String nodeFirst;
+
+	private String nodeLast;
+
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
@@ -22,6 +26,10 @@ public class RSingleLinkedListTest extends TestCase {
 		newStr = "New Strings With Random Position Per Test";
 
 		nodeToDel = "String 1";
+
+		nodeFirst = "String 0";
+
+		nodeLast = "String 4";
 	}
 
 	@Test
@@ -55,7 +63,14 @@ public class RSingleLinkedListTest extends TestCase {
 	public void testGetFirstObjectFromList() {
 		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
 		Object firstElement = rSLL.first();
-		assertEquals(nodeToDel, firstElement);
+		assertEquals(nodeFirst, firstElement);
+	}
+
+	@Test
+	public void testGetLastObjectFromList() {
+		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
+		Object lastElement = rSLL.last();
+		assertEquals(nodeLast, lastElement);
 	}
 
 }

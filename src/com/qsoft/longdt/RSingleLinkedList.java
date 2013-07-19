@@ -44,6 +44,10 @@ public class RSingleLinkedList {
 	}
 
 	public Object first() {
+		return singleLinkedList.getFirst();
+	}
+
+	public Object last() {
 		// TODO Auto-generated method stub
 		return null;
 	}
