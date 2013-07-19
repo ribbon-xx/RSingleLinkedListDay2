@@ -52,8 +52,8 @@ public class RSingleLinkedList {
 	}
 
 	public Object before(Object nodeAnchor) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return singleLinkedList.get(singleLinkedList.indexOf(nodeAnchor) - 1);
 	}
 
 }
