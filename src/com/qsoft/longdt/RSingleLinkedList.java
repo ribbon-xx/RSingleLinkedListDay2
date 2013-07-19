@@ -39,4 +39,9 @@ public class RSingleLinkedList {
 		return singleLinkedList.get(i);
 	}
 
+	public void delete(String nodeToDel) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

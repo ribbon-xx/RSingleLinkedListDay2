@@ -43,5 +43,13 @@ public class RSingleLinkedListTest extends TestCase {
 		assertEquals(6, rSLL.size());
 		assertEquals(newStr, rSLL.get(3));
 	}
+	
+	
+	@Test
+	public void testDeleteANodeInList(){
+		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
+		rSLL.delete(nodeToDel);
+		assertEquals(4, rSLL.size());
+	}
 
 }
