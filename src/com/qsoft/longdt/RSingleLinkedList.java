@@ -57,8 +57,7 @@ public class RSingleLinkedList {
 	}
 
 	public Object after(Object nodeAnchor) {
-		// TODO Auto-generated method stub
-		return null;
+		return singleLinkedList.get(singleLinkedList.indexOf(nodeAnchor) + 1);
 	}
 
 }
