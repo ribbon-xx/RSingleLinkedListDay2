@@ -44,7 +44,6 @@ public class RSingleLinkedListTest extends TestCase {
 		assertEquals(newStr, rSLL.get(3));
 	}
 	
-	
 	@Test
 	public void testDeleteANodeInList(){
 		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
