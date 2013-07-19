@@ -51,4 +51,9 @@ public class RSingleLinkedList {
 		return singleLinkedList.getLast();
 	}
 
+	public Object before(Object nodeAnchor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
