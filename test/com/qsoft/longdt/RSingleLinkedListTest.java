@@ -20,6 +20,8 @@ public class RSingleLinkedListTest extends TestCase {
 
 	private String nodeBeforeAnchor;
 
+	private String nodeAfterAnchor;
+
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
@@ -35,9 +37,11 @@ public class RSingleLinkedListTest extends TestCase {
 
 		nodeLast = "String 4";
 
-		nodeAnchor = "String 3";
+		nodeAnchor = "String 2";
 
-		nodeBeforeAnchor = "String 2";
+		nodeBeforeAnchor = "String 1";
+
+		nodeAfterAnchor = "String 3";
 	}
 
 	@Test
@@ -86,6 +90,13 @@ public class RSingleLinkedListTest extends TestCase {
 		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
 		Object elementBeforeNodeAnchor = rSLL.before(nodeAnchor);
 		assertEquals(nodeBeforeAnchor, elementBeforeNodeAnchor);
+	}
+
+	@Test
+	public void testGetObjectAfterAnother() {
+		RSingleLinkedList rSLL = new RSingleLinkedList(strArray);
+		Object elementAfterNodeAnchor = rSLL.after(nodeAnchor);
+		assertEquals(nodeAfterAnchor, elementAfterNodeAnchor);
 	}
 
 }
