@@ -48,8 +48,7 @@ public class RSingleLinkedList {
 	}
 
 	public Object last() {
-		// TODO Auto-generated method stub
-		return null;
+		return singleLinkedList.getLast();
 	}
 
 }
